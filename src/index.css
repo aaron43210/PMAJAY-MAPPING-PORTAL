@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 252 251 248;
+    --foreground: 28 28 28;
+    --card: 255 255 255;
+    --card-foreground: 28 28 28;
+    --primary: 59 130 246;
+    --primary-foreground: 255 255 255;
+    --secondary: 243 244 246;
+    --secondary-foreground: 28 28 28;
+    --muted: 243 244 246;
+    --muted-foreground: 107 114 128;
+    --accent: 243 244 246;
+    --accent-foreground: 28 28 28;
+    --border: 229 231 235;
+    --input: 229 231 235;
+    --ring: 59 130 246;
+  }
+
+  .dark {
+    --background: 28 28 28;
+    --foreground: 252 251 248;
+    --card: 38 38 38;
+    --card-foreground: 252 251 248;
+    --primary: 96 165 250;
+    --primary-foreground: 28 28 28;
+    --secondary: 48 48 48;
+    --secondary-foreground: 252 251 248;
+    --muted: 48 48 48;
+    --muted-foreground: 156 163 175;
+    --accent: 48 48 48;
+    --accent-foreground: 252 251 248;
+    --border: 64 64 64;
+    --input: 64 64 64;
+    --ring: 96 165 250;
+  }
+
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  }
+}
+
+@layer utilities {
+  .min-h-dvh {
+    min-height: 100dvh;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #404040;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #525252;
+}
