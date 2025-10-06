@@ -198,7 +198,7 @@ export default function ComplaintPage() {
             >
               <option value="">Select State</option>
               {states.map(state => (
-                <option key={state} value={state}>{state}</option>
+                <option key={state.id} value={state.name}>{state.name}</option>
               ))}
             </select>
           </div>
