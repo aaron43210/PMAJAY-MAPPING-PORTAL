@@ -60,7 +60,7 @@ export default function Layout({ children, currentPage, onNavigate }: LayoutProp
             >
               <MapPin size={32} className="text-blue-500" />
               <div className="hidden sm:block">
-                <h1 className="text-xl font-bold text-blue-400">AJAY-MAP</h1>
+                <h1 className="text-xl font-bold text-blue-400">PM AJAY-MAP</h1>
                 <p className="text-xs text-gray-400">Agency Mapping Portal</p>
               </div>
             </button>

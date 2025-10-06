@@ -74,7 +74,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
         </div>
 
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-yellow-400">
-          AJAY-MAP
+          PM AJAY-MAP
         </h1>
 
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-yellow-400 px-4">

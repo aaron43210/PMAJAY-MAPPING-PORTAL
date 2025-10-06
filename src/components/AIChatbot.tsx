@@ -7,7 +7,7 @@ export default function AIChatbot() {
   const [language, setLanguage] = useState<'en' | 'hi'>('en');
   const [messages, setMessages] = useState<Array<{ role: 'user' | 'bot'; content: string }>>([{
     role: 'bot',
-    content: language === 'en' ? 'Hello! I am AJAY AI Assistant. I can help you with PM-AJAY projects information.' : 'नमस्ते! मैं AJAY AI सहायक हूं।',
+    content: language === 'en' ? 'Hello! I am PM AJAY-MAP AI Assistant. I can help you with PM-AJAY projects information.' : 'नमस्ते! मैं PM AJAY-MAP AI सहायक हूं।',
   }]);
   const [input, setInput] = useState('');
 
@@ -35,7 +35,7 @@ export default function AIChatbot() {
           <div className="bg-blue-600 dark:bg-blue-500 p-4 rounded-t-xl flex items-center justify-between">
             <div className="flex items-center gap-2">
               <MessageCircle size={20} className="text-white" />
-              <div><h3 className="text-white font-semibold text-sm">AJAY AI Assistant</h3></div>
+              <div><h3 className="text-white font-semibold text-sm">PM AJAY-MAP AI Assistant</h3></div>
             </div>
             <div className="flex items-center gap-2">
               <button onClick={() => setLanguage(language === 'en' ? 'hi' : 'en')}
