@@ -44,6 +44,7 @@ export default function Layout({ children, currentPage, onNavigate }: LayoutProp
     { id: 'proposal', label: 'Proposal' },
     { id: 'dashboard', label: 'Dashboard' },
     { id: 'transparency', label: 'Transparency' },
+    { id: 'complaint', label: 'File Complaint' },
     { id: 'comparison', label: 'Comparison' },
     { id: 'impact', label: 'Impact Metrics' },
     { id: 'about', label: 'About' },

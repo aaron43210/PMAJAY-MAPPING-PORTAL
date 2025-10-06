@@ -10,6 +10,7 @@ import TransparencyPage from './pages/TransparencyPage';
 import ComparisonPage from './pages/ComparisonPage';
 import ImpactPage from './pages/ImpactPage';
 import AboutPage from './pages/AboutPage';
+import ComplaintPage from './pages/ComplaintPage';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -32,6 +33,8 @@ function App() {
         return <DashboardPage />;
       case 'transparency':
         return <TransparencyPage />;
+      case 'complaint':
+        return <ComplaintPage />;
       case 'comparison':
         return <ComparisonPage />;
       case 'impact':
