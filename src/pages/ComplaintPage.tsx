@@ -1,12 +1,7 @@
 import { useState } from 'react';
 import { AlertCircle, CheckCircle, FileText, Send } from 'lucide-react';
-import { createClient } from '@supabase/supabase-js';
+import { supabase } from '../lib/supabase';
 import { states } from '../data/indiaData';
-
-const supabase = createClient(
-  import.meta.env.VITE_SUPABASE_URL,
-  import.meta.env.VITE_SUPABASE_ANON_KEY
-);
 
 export default function ComplaintPage() {
   const [formData, setFormData] = useState({
